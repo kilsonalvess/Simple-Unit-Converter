@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    /* Estilos CSS para centralizar o formulário na tela */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: darkkhaki;
+    }
+
+    /* Estilos CSS para o formulário de login */
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f7f7f7;
+    }
+
+    form img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 1rem;
+    }
+
+    form input[type="text"],
+    form input[type="password"] {
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    form input[type="submit"] {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #0069d9;
+    }
+
+    form input[type="button"]:hover {
+      padding: 0.5rem;
+      margin-bottom: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 0.75rem;
+
+    }
+  </style>
+</head>
+<body>
+<form>
+  <img src="c:/areadetrabalho/imagem.png" alt="">
+  <label for="username">Usuário</label>
+  <input type="text" id="username" name="username" required>
+  <label for="password">Senha</label>
+  <input type="password" id="password" name="password" required>
+  <input type="submit" value="Acessar">
+  <br>
+  <br>
+  <input type="button" value="Criar conta">
+  <br>
+  <input type="button" value="Esqueceu Senha">
+
+
+</form>
+</body>
+</html>
