@@ -1,1 +1,22 @@
-<p>listagem-clientes works!</p>
+<div>
+  <mat-icon [matBadge]="clientes.length" matBadgeColor="primary">people</mat-icon>
+</div>
+<div fxLayout="row wrap" fxLayout.lt-sm="column">
+  <mat-card fxFlex="20" class="card-cliente" *ngFor="let cliente of clientes">
+    <mat-card-header>
+      <mat-card-title>{{cliente.nome | titlecase}}</mat-card-title>
+      <mat-card-subtitle *ngIf="cliente.cpf.length > 0">CPF: {{cliente.cpf | cpf}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      Professor em.... Tem {{cliente.idade}} anos
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button [routerLink]="['/editacliente', cliente.cpf]">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-button (click)="excluir(cliente)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

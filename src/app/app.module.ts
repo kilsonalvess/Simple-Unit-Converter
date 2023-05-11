@@ -1,27 +1,24 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
-import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
-
-
-import {ListagemClientesComponent} from "./cliente/listagem-clientes/listagem-clientes.component";
-import {MantemClienteComponent} from "./cliente/mantem-cliente/mantem-cliente.component";
-
+import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon';
+import {MatBadgeModule} from '@angular/material/badge';
+import { CpfPipe } from './pipes/pipe/cpf.pipe';
+import {MatMenuModule} from '@angular/material/menu';
+import {LayoutModule} from './layout/layout.module';
+import {ClienteModule} from './cliente/cliente.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ListagemClientesComponent,
-    MantemClienteComponent
-
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -29,12 +26,14 @@ import {MantemClienteComponent} from "./cliente/mantem-cliente/mantem-cliente.co
     FormsModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    MatInputModule,
     MatButtonModule,
+    MatCardModule,
+    MatInputModule,
     MatIconModule,
-    MatCardModule
-
-
+    MatBadgeModule,
+    MatMenuModule,
+    LayoutModule,
+    ClienteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
