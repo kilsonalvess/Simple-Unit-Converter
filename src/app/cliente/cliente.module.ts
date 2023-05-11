@@ -10,7 +10,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { RouterLink } from '@angular/router';
 
-import { PipesModule } from '../pipes/pipes.module';
+import { PipesModule } from './pipes/pipes.module';
 import { ListagemClientesComponent } from './listagem-clientes/listagem-clientes.component';
 import { MantemClienteComponent } from './mantem-cliente/mantem-cliente.component';
 

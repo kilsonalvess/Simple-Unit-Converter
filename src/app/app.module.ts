@@ -11,14 +11,22 @@ import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatBadgeModule} from '@angular/material/badge';
-import { CpfPipe } from './pipes/pipe/cpf.pipe';
+import { CpfPipe } from './cliente/pipes/pipe/cpf.pipe';
 import {MatMenuModule} from '@angular/material/menu';
 import {LayoutModule} from './layout/layout.module';
 import {ClienteModule} from './cliente/cliente.module';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { LoginComponent } from './cliente/login/login.component';
+import { LoginClienteComponent } from './cliente/login-cliente/login-cliente.component';
+import { SobreAppComponent } from './cliente/sobre-app/sobre-app.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    LoginClienteComponent,
+    SobreAppComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +41,9 @@ import {ClienteModule} from './cliente/cliente.module';
     MatBadgeModule,
     MatMenuModule,
     LayoutModule,
-    ClienteModule
+    ClienteModule,
+    MatToolbarModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,7 +7,7 @@ import {Cliente} from './shared/modelo/cliente';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'primeiro-angular-alunos';
+  title = 'Simple Convert';
 
 
 }

@@ -10,23 +10,25 @@ import {MatBadgeModule} from '@angular/material/badge';
 import {MatMenuModule} from '@angular/material/menu';
 import { MenuComponent } from './menu/menu.component';
 import {RouterLink} from '@angular/router';
+import {MatToolbarModule} from "@angular/material/toolbar";
 
 @NgModule({
   declarations: [
     MenuComponent
   ],
-  imports: [
-    CommonModule,
-    BrowserAnimationsModule,
-    MatFormFieldModule,
-    MatButtonModule,
-    MatCardModule,
-    MatInputModule,
-    MatIconModule,
-    MatBadgeModule,
-    MatMenuModule,
-    RouterLink
-  ],
+    imports: [
+        CommonModule,
+        BrowserAnimationsModule,
+        MatFormFieldModule,
+        MatButtonModule,
+        MatCardModule,
+        MatInputModule,
+        MatIconModule,
+        MatBadgeModule,
+        MatMenuModule,
+        RouterLink,
+        MatToolbarModule
+    ],
   exports: [
     MenuComponent
   ]
