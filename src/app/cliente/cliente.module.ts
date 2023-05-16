@@ -1,0 +1,26 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { CadastrarClienteComponent } from './cadastrar-cliente/cadastrar-cliente.component';
+import { ListarClienteComponent } from './listar-cliente/listar-cliente.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
+@NgModule({
+  declarations: [
+    CadastrarClienteComponent,
+    ListarClienteComponent
+  ],
+  imports: [
+    CommonModule,
+    MatCardModule,
+    MatInputModule,
+    MatIconModule,
+    MatFormFieldModule
+  ],
+  exports: [
+    CadastrarClienteComponent
+  ]
+})
+export class ClienteModule { }
