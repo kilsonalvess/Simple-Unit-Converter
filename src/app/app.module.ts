@@ -6,14 +6,11 @@ import { ClienteModule } from './cliente/cliente.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CadastrarContaComponent } from './conta/cadastrar-conta/cadastrar-conta.component';
-
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CadastrarContaComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +18,6 @@ import { CadastrarContaComponent } from './conta/cadastrar-conta/cadastrar-conta
     BrowserAnimationsModule,
     LayoutModule,
     ClienteModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent]

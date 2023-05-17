@@ -1,3 +1,5 @@
 export class Conta {
-  constructor(public numero: string){}
+  constructor(public agencia?: number,
+              public numeroConta?: number,
+              public saldo?: number){}
 }

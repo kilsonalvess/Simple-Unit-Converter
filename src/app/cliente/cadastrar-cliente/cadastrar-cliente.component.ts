@@ -15,6 +15,7 @@ export class CadastrarClienteComponent {
   }
 
   cadastrar(){
-    console.log(this.cliente);
+    //alert('Cliente cadastrado com sucesso');
+    this.cliente = new Cliente();
   }
 }
