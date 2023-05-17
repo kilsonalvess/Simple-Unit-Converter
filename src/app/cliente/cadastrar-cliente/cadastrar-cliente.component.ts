@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Cliente } from 'src/app/shared/model/cliente';
 
 @Component({
   selector: 'app-cadastrar-cliente',
@@ -7,5 +8,13 @@ import { Component } from '@angular/core';
 
 })
 export class CadastrarClienteComponent {
+  cliente: Cliente;
 
+  constructor(){
+    this.cliente = new Cliente();
+  }
+
+  cadastrar(){
+    console.log(this.cliente);
+  }
 }

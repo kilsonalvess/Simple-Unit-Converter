@@ -6,24 +6,24 @@
   <mat-card-content>
     <mat-form-field>
       <mat-label>Nome</mat-label>
-      <input matInput type="text" placeholder="digite seu nome">
+      <input matInput [(ngModel)]="cliente.nome" placeholder="digite seu nome">
     </mat-form-field>
     <br>
 
     <mat-form-field>
       <mat-label>Idade</mat-label>
-      <input matInput type="text" placeholder="digite sua idade">
+      <input matInput [(ngModel)]="cliente.idade" placeholder="digite sua idade">
     </mat-form-field>
     <br>
 
     <mat-form-field>
       <mat-label>CPF</mat-label>
-      <input matInput type="text" placeholder="digite seu CPF">
+      <input matInput [(ngModel)]="cliente.cpf" placeholder="digite seu CPF">
     </mat-form-field>
     </mat-card-content>
 
   <mat-card-actions>
-    <button mat-button class ="botao">Adicionar</button>
+    <button mat-button class ="botao" (click)="cadastrar()">Adicionar</button>
   </mat-card-actions>
 
 </mat-card>
