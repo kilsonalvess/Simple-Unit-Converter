@@ -4,6 +4,7 @@ import { MenuComponent } from './menu/menu.component';
 import { MatMenuModule} from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule} from '@angular/material/toolbar';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { MatToolbarModule} from '@angular/material/toolbar';
     CommonModule,
     MatButtonModule,
     MatMenuModule,
-    MatToolbarModule
+    MatToolbarModule,
+    RouterModule
   ],
   exports: [
     MenuComponent
