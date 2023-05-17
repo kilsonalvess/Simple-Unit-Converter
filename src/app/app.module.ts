@@ -1,7 +1,7 @@
 import { LayoutModule } from './layout/layout.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ClienteModule } from './cliente/cliente.module';
+import { InformacoesModule } from './cliente/cliente.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,7 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
-    ClienteModule,
+    InformacoesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

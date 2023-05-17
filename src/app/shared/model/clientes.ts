@@ -1,9 +1,9 @@
-import { Cliente } from "./cliente"
+import { Informacoes } from "./cliente"
 import { Conta } from "./conta";
 
 let conta1 = new Conta('conta1');
 
-export const Clientes: Array<Cliente> = [
+export const Informacoess: Array<Informacoes> = [
   {
     nome: 'Gabriel',
     cpf:'12310923',

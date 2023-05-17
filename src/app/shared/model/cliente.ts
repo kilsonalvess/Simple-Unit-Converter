@@ -1,6 +1,6 @@
 import { Conta } from "./conta";
 
-export class Cliente {
+export class Informacoes {
   private static numeroConta: number = 1;
 
   public conta: Conta;
@@ -11,7 +11,7 @@ export class Cliente {
     public idade?: number
   ) {
 
-    this.conta = new Conta(123, Cliente.numeroConta, 0);
-    Cliente.numeroConta++;
+    this.conta = new Conta(123, Informacoes.numeroConta, 0);
+    Informacoes.numeroConta++;
   }
 }

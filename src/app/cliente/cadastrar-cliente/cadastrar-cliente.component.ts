@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Cliente } from 'src/app/shared/model/cliente';
+import { Informacoes } from 'src/app/shared/model/cliente';
 
 @Component({
   selector: 'app-cadastrar-cliente',
@@ -7,15 +7,15 @@ import { Cliente } from 'src/app/shared/model/cliente';
   styleUrls: ['./cadastrar-cliente.component.css'],
 
 })
-export class CadastrarClienteComponent {
-  cliente: Cliente;
+export class CadastrarInformacoesComponent {
+  cliente: Informacoes;
 
   constructor(){
-    this.cliente = new Cliente();
+    this.cliente = new Informacoes();
   }
 
   cadastrar(){
-    //alert('Cliente cadastrado com sucesso');
-    this.cliente = new Cliente();
+    //alert('Informacoes cadastrado com sucesso');
+    this.cliente = new Informacoes();
   }
 }

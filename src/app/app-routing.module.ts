@@ -1,4 +1,4 @@
-import { CadastrarClienteComponent } from './cliente/cadastrar-cliente/cadastrar-cliente.component';
+import { CadastrarInformacoesComponent } from './cliente/cadastrar-cliente/cadastrar-cliente.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MenuComponent } from './layout/menu/menu.component';
@@ -10,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: 'cadastrarcliente',
-    component: CadastrarClienteComponent
+    component: CadastrarInformacoesComponent
   }
 ];
 

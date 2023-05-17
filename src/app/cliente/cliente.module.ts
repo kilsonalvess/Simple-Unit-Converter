@@ -7,13 +7,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 
-import { CadastrarClienteComponent } from './cadastrar-cliente/cadastrar-cliente.component';
-import { ListarClienteComponent } from './listar-cliente/listar-cliente.component';
+import { CadastrarInformacoesComponent } from './cadastrar-cliente/cadastrar-cliente.component';
+import { VerPerfilComponent } from './ver-perfil/ver-perfil.component';
 
 @NgModule({
   declarations: [
-    CadastrarClienteComponent,
-    ListarClienteComponent
+    CadastrarInformacoesComponent,
+    VerPerfilComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +25,7 @@ import { ListarClienteComponent } from './listar-cliente/listar-cliente.componen
     FormsModule
   ],
   exports: [
-    CadastrarClienteComponent
+    CadastrarInformacoesComponent
   ]
 })
-export class ClienteModule { }
+export class InformacoesModule { }
