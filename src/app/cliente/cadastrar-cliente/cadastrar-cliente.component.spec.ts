@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CadastrarInformacoesComponent } from './cadastrar-cliente.component';
+import { CadastrarClienteComponent } from './cadastrar-cliente.component';
 
-describe('CadastrarInformacoesComponent', () => {
-  let component: CadastrarInformacoesComponent;
-  let fixture: ComponentFixture<CadastrarInformacoesComponent>;
+describe('CadastrarClienteComponent', () => {
+  let component: CadastrarClienteComponent;
+  let fixture: ComponentFixture<CadastrarClienteComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CadastrarInformacoesComponent]
+      declarations: [CadastrarClienteComponent]
     });
-    fixture = TestBed.createComponent(CadastrarInformacoesComponent);
+    fixture = TestBed.createComponent(CadastrarClienteComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

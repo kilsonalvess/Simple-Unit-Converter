@@ -1,4 +1,4 @@
-import { CadastrarInformacoesComponent } from './cliente/cadastrar-cliente/cadastrar-cliente.component';
+import { CadastrarClienteComponent } from './cliente/cadastrar-cliente/cadastrar-cliente.component';
 import { VerPerfilComponent } from './cliente/ver-perfil/ver-perfil.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -11,7 +11,7 @@ const routes: Routes = [
   },
   {
     path: 'cadastrarcliente',
-    component: CadastrarInformacoesComponent
+    component: CadastrarClienteComponent
   },
   {
     path: 'verperfil',
