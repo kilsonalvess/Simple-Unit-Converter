@@ -15,7 +15,6 @@ export class ClienteService {
 
   adicionar(cliente: Cliente): void {
     this.clientes.push(cliente);
-    console.log(this.clientes);
   }
 
   listar(): Cliente[] {

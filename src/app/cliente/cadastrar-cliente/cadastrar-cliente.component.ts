@@ -11,12 +11,12 @@ import { Cliente } from 'src/app/shared/model/cliente';
 export class CadastrarClienteComponent {
   cliente: Cliente;
 
-  constructor(private ClienteService: ClienteService){
+  constructor(private clienteService: ClienteService){
     this.cliente = new Cliente();
   }
 
   cadastrar(){
-    this.ClienteService.adicionar(this.cliente);
+    this.clienteService.adicionar(this.cliente);
     this.cliente = new Cliente();
   }
 }

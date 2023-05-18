@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { ClienteService } from './../../shared/services/cliente.service';
+import { Component, OnInit } from '@angular/core';
 import { Clientes } from 'src/app/shared/model/clientes';
 
 @Component({
@@ -6,8 +7,13 @@ import { Clientes } from 'src/app/shared/model/clientes';
   templateUrl: './ver-perfil.component.html',
   styleUrls: ['./ver-perfil.component.css']
 })
-export class VerPerfilComponent {
+export class VerPerfilComponent implements OnInit {
   clientes = Clientes;
-  constructor(){
+
+  constructor(private clienteService: ClienteService){
+  }
+
+  ngOnInit(): void {
+    this.clientes = this.clienteService.listar();
   }
 }
