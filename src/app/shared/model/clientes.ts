@@ -1,13 +1,23 @@
-import { Informacoes } from "./cliente"
+import { Cliente } from "./cliente";
 import { Conta } from "./conta";
+// export class Clientes {
+//   private clientes: Cliente[];
 
-let conta1 = new Conta('conta1');
+//   constructor() {
+//     this.clientes = [];
+//   }
 
-export const Informacoess: Array<Informacoes> = [
-  {
-    nome: 'Gabriel',
-    cpf:'12310923',
-    idade: 23,
-    conta: conta1
-  }
-]
+//   public adicionarCliente(cliente: Cliente): void {
+//     this.clientes.push(cliente);
+//   }
+
+//   public obterClientes(): Cliente[] {
+//     return this.clientes;
+//   }
+
+//   public obterCliente(cpf: string): Cliente | undefined {
+//     return this.clientes.find((cliente) => cliente.cpf === cpf);
+//   }
+// }
+
+export const Clientes: Cliente[] = []

@@ -1,0 +1,16 @@
+.titulo {
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.card_principal{
+  width: 285px;
+  height: 330px;
+}
+
+.botao {
+  background-color: indianred;
+  width: fit-content;
+  margin-top: 10px;
+}

@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListarInformacoesComponent } from './ver-perfil.component';
+import { VerPerfilComponent } from './ver-perfil.component';
 
-describe('ListarInformacoesComponent', () => {
-  let component: ListarInformacoesComponent;
-  let fixture: ComponentFixture<ListarInformacoesComponent>;
+describe('VerPerfilComponent', () => {
+  let component: VerPerfilComponent;
+  let fixture: ComponentFixture<VerPerfilComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ListarInformacoesComponent]
+      declarations: [VerPerfilComponent]
     });
-    fixture = TestBed.createComponent(ListarInformacoesComponent);
+    fixture = TestBed.createComponent(VerPerfilComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

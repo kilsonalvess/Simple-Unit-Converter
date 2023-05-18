@@ -1,3 +1,4 @@
+import { ClienteService } from './../../shared/services/cliente.service';
 import { Component } from '@angular/core';
 import { Cliente } from 'src/app/shared/model/cliente';
 
@@ -10,12 +11,12 @@ import { Cliente } from 'src/app/shared/model/cliente';
 export class CadastrarClienteComponent {
   cliente: Cliente;
 
-  constructor(){
+  constructor(private ClienteService: ClienteService){
     this.cliente = new Cliente();
   }
 
   cadastrar(){
-    //alert('Informacoes cadastrado com sucesso');
+    this.ClienteService.adicionar(this.cliente);
     this.cliente = new Cliente();
   }
 }
